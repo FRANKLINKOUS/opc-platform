@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="OPC创业服务平台 - AI驱动的创业服务平台，连接OPC创业者与本地资源。提供政策查询、园区匹配、服务对接等一站式创业支持。" />
+    <meta name="keywords" content="OPC,创业服务,政策查询,园区匹配,创业平台,AI匹配,创业支持" />
+    <meta name="author" content="OPC创业服务平台" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="OPC创业服务平台 - 连接创业者与本地资源的智能枢纽" />
+    <meta property="og:description" content="AI驱动的政策匹配、园区推荐、服务对接，让创业之路更高效、更智能" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://opc-platform.com" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="OPC创业服务平台" />
+    <meta name="twitter:description" content="AI驱动的创业服务平台，连接创业者与本地资源" />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230066CC'/%3E%3Cpath d='M50 20 L65 45 L55 45 L55 75 L45 75 L45 45 L35 45 Z' fill='white'/%3E%3C/svg%3E" />
+    
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <title>OPC创业服务平台 - 连接创业者与本地资源的智能枢纽</title>
+    
+    <style>
+      /* Critical CSS */
+      html { scroll-behavior: smooth; }
+      body { 
+        margin: 0; 
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #root { min-height: 100vh; }
+      
+      /* Loading state */
+      .loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #F0F7FF 0%, #FFFFFF 50%, #F5F5F5 100%);
+      }
+      .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid #E6F2FF;
+        border-top-color: #0066CC;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <!-- Loading fallback -->
+      <div class="loading">
+        <div class="loading-spinner"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
